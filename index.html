@@ -10,13 +10,17 @@
         background-attachment: fixed;
         margin: 0;
       }
-        .tent {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 250px;
-          height: 900px;
+      .tent {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 250px;
+        height: 900px;
           
+      }
+      p{
+        color: red;
+        font-size: 50px;
       }
     </style>
   </head>
@@ -29,15 +33,19 @@
         count++;
         if (count == 1){
           text = "No.";
+          document.getElementById("message").textContent = text;
         }
         if (count == 2){
           text = "I don't wanna.";
+          document.getElementById("message").textContent = text;
         }
         if (count == 3){
           text = "No, I don't think so.";
+          document.getElementById("message").textContent = text;
         }
         if (count == 4){
           text = "Can we do something else?";
+          document.getElementById("message").textContent = text;
         }
           
         if (count == 5){
@@ -46,7 +54,6 @@
           document.getElementById("message").textContent = text;
           return;
         }
-          document.getElementById("message").textContent = text;
       }
     </script>
   </body>
