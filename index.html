@@ -9,6 +9,7 @@
         background-size: cover;
         background-attachment: fixed;
         margin: 0;
+      }
         .tent {
           display: block;
           margin-left: auto;
@@ -37,13 +38,17 @@
           
         if (count == 5){
           text = "OOH! What's that?";
-          window.locatiom = href "page1.html";
+          window.location = href "page1.html";
+          document.getElementById("message").textContent = text;
+          return;
         }
+          document.getElementById("message").textContent = text;
           
     </script>
   </head>
   <body>
-      <img onclick="a()" title="Enter?"src="images/Circus_Tent.png" alt= tent class= tent></a>
+      <img onclick="a()" title="Enter?" src="images/Circus_Tent.png" alt= "tent" class= "tent">
+      <p id="message"></p>
     </div>
   </body>
 </html>
